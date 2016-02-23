@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	background-color: #95BBFF;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	text-align: center;
+}
+p{
+	background-color: #FFFE80;
+	border: 5px solid #FFF200;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+a{
+	background-color: #28BB00;
+	border: 5px solid #28BB00;
+	border-radius: 5px / 15px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#map{
+	height: 100vh;
+	width: 100vw;
+}
+

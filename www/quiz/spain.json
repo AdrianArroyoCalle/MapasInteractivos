@@ -1,0 +1,6 @@
+{
+	"title" : "Provincias de España",
+	"svg" : "/svg/spain.svg",
+	"selector" : ["#pr_madrid","#pr_la_corunya","pr_valladolid"],
+	"areas" : ["Madrid","A Coruña","Valladolid"]
+}
