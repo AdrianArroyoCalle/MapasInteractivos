@@ -1,6 +1,7 @@
 {
 	"title" : "Provincias de España",
 	"svg" : "/svg/spain.svg",
-	"selector" : ["#pr_madrid","#pr_la_corunya","pr_valladolid"],
-	"areas" : ["Madrid","A Coruña","Valladolid"]
+	"viewBox" : "133.965 0 443.965 374",
+	"selector" : ["#pr_madrid","#pr_la_corunya","#pr_valladolid","#pr_lugo","#pr_ourense","#pr_pontevedra","#pr_asturias","#pr_cantabria","#pr_vizcaya","#pr_guipuzcoa","#pr_alava","#pr_navarra","#pr_la_rioja","#pr_leon","#pr_palencia","#pr_burgos","#pr_zamora","#pr_soria","#pr_segovia","#pr_salamanca","#pr_avila","#pr_huesca","#pr_zaragoza","#pr_teruel","#pr_lleida","#pr_barcelona","#pr_tarragona","#pr_girona",["#is_menorca","#is_mallorca","#is_ibiza","#is_formentera","#is_cabrera"],"#pr_castellon","#pr_valencia","#pr_alicante","#pr_murcia","#pr_guadalajara","#pr_cuenca","#pr_toledo","#pr_ciudad_real","#pr_albacete","#pr_caceres","#pr_badajoz","#pr_cordoba","#pr_jaen","#pr_huelva","#pr_sevilla","#pr_granada","#pr_almeria","#pr_malaga","#pr_cadiz","#pr_ceuta","#pr_melilla",["#is_alegranza","#is_graciosa","#is_lanzarote","#is_fuerteventura","#is_grancanaria"],["#is_la_palma","#is_tenerife","#is_gomera","#is_hierro"]],
+	"areas" : ["Madrid","A Coruña","Valladolid","Lugo","Ourense","Pontevedra","Oviedo","Santander","Vizcaya","Guipuzcoa","Álava","Navarra","Logroño","León","Palencia","Burgos","Zamora","Soria","Segovia","Salamanca","Ávila","Huesca","Zaragoza","Teruel","Lérida","Barcelona","Tarragona","Gerona","Islas Baleares","Castellón","Valencia","Alicante","Murcia","Guadalajara","Cuenca","Toledo","Ciudad Real","Albacete","Cáceres","Badajoz","Córdoba","Jaén","Huelva","Sevilla","Granada","Almería","Málaga","Cádiz","Ceuta","Melilla","Gran Canaria","Tenerife"]
 }

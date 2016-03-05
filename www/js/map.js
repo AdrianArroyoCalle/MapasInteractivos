@@ -1,66 +1,175 @@
-function oldload(){
-	var size = Math.min(window.innerWidth,window.innerHeight);
-	//var cantabria = R.path("M293.079,30.987l0.479-0.24h0.239v0.24v-0.24h0.24v0.24v-0.24h0.239v0.24h0.24h0.239v-0.24l0.24,0.24v-0.24h0.239v0.24v-0.24l0.24,0.24v-0.24h0.479h0.479v0.24h0.239h0.24h-0.24h0.24h-0.24h0.24h0.24l0.479-0.24v-0.24h0.479v0.48h0.239l0.24,0.239h0.239v-0.239v0.239v-0.239v0.239l0.24-0.239h0.239h0.24l0.239,0.239h0.24v-0.239h0.239h0.24v-0.24l0.239,0.24l0.479-0.24h0.24l0.239,0.24l0.24-0.24h0.239h0.24l0.239-0.24h0.24v0.24l0.479-0.24h0.239v-0.24h0.479h0.24h-0.24l0.722-0.24h0.238v-0.239h0.24v-0.24h0.24l0.24-0.24v0.24h0.719v-0.24h0.24v-0.24h0.239v0.24h0.24l0.239-0.24l0.24-0.239h-0.24h0.24l0.24,0.239l0.239,0.24l0.479-0.24l0.721-0.48l0.479-0.48h-0.238h0.479h0.24h-0.24l0.48-0.241h0.238h0.48h0.24h0.238h-0.238h0.238v-0.239v0.239h0.24h0.24l0.479-0.479l0.24,0.241v0.239v-0.239h0.24l-0.24-0.241h0.24v-0.24h0.24h0.238h0.24h0.48v0.24h0.238l-0.238,0.241v0.239l0.479,0.241h0.24v0.24l-0.24-0.24l-0.479,0.24h-0.24h-0.24l-0.24,0.24v0.241h-0.238h-0.24h0.24l0.238,0.239h-0.238h-0.24l0.24,0.24h-0.24l-0.24-0.24v0.24l0.24,0.24v-0.24h0.24h-0.24v0.24h-0.24h0.48l0.238,0.24l0.24,0.239h-0.24v0.24h-0.238v0.48v-0.24v0.24h0.238l0.24-0.24v-0.24h0.24l0.24-0.24h0.238l-0.238-0.239v-0.24h0.238v-0.24h0.24v-0.24V28.83l0.24,0.239h0.24v0.24h-0.24v0.24l0.24,0.24v-0.24v0.24l0.24-0.24v0.24l0.238-0.24h-0.238h-0.24l0.24-0.24v-0.24V28.83h-0.24h0.24l-0.48-0.241h-0.24h0.721h0.479l0.239-0.24v-0.24v-0.241l0.479-0.239h0.24v0.239h0.239h0.24v-0.239h0.239v-0.241h0.479v-0.24h0.24l0.239-0.24l0.479,0.24v-0.24l0.24,0.24v-0.24h0.24l0.239-0.239l0.239-0.24h0.24h0.24h-0.24l0.24,0.24h0.239l0.24-0.24v0.24h0.239h0.24v0.239v0.24h0.239v0.24h0.24v-0.24h0.239h0.24v0.48v0.239h0.239l0.24,0.241h0.479l0.239,0.24h0.479h0.24h0.239l0.24,0.24v0.72l-0.24,0.24l-0.479-0.24h-0.239v-0.24v0.48h-0.24h-0.479v0.24l-0.239,0.239h0.239v-0.239h0.24h0.239l0.24-0.24v0.24v0.96l0.239-0.48v-0.479v-0.24h0.24l0.239,0.72h0.24v0.24h0.479v-0.24h-0.24h0.24h0.239h0.24h0.239h0.24h0.239v0.24h0.24h0.239l0.24-0.24l0.239,0.24l0.24-0.24h0.239l-0.239,0.24h0.239v0.24l0.24,0.24v-0.24h0.239h-0.239l0.479-0.24v0.24h0.239l0.24,0.24h0.721h0.238l0.721,0.239v0.24v0.24l0.24-0.24v0.24h0.24h-0.24v0.24h0.24h-0.24h0.24v0.239v-0.239l0.239,0.239h0.239v0.24h0.24v0.24h0.24h0.239l0.24,0.24h0.239v0.24v0.239v0.96v0.48l-0.239,0.24h-0.72h-0.24l-0.24,0.239h-0.24v0.48l-0.238-0.24v-0.24l-0.24-0.239v-0.481l-0.721,0.241l-0.24,0.24v0.239h-0.239l-0.479,0.24h-0.24l-0.239-0.24l0.239-0.239h-0.239h-0.479v0.239h-0.24l-0.239-0.239l-0.479,0.239l0.239,0.48v0.24l-0.479,0.24l-0.479-0.24l-0.239,0.24l-0.24,0.239l-0.239,0.48v0.24l-0.24-0.24h-0.239v0.24l-0.24,0.239h-0.239l-0.24,0.24l-0.239-0.24l-0.24,0.24l0.24,0.24v0.24l0.239,0.72v0.24v1.2l0.24,0.24v0.239l0.239,0.24v0.72h-0.239h-0.24h-0.239l-0.479-0.239h-0.72v0.239l-0.48-0.239h-0.24l-0.72-0.241l-0.24-0.24h-0.72h-0.24l-0.479-0.24l-0.24,0.24h-0.24v-0.479l-0.238-0.24l-0.24-0.24h-0.24h-0.24l-0.238-0.24h-0.24v0.24l-0.24,0.24l-0.24,0.24v0.239h-0.238v0.24l-0.24,0.24v0.241l-0.24,0.479h-0.24v0.24v0.24h-0.24l-0.238,0.241h-0.24l-0.24,0.239h-0.479h-0.24v0.48v0.24l-0.24,0.239l-0.24-0.239l-0.479,0.239l-0.24-0.239h-0.24v-0.24l-0.238,0.24h-0.24h-0.24H312.5v0.239v0.24l0.479,0.24v0.24l-0.24,0.24L312.5,45.14v0.24h-0.24h-0.24h-0.24h-0.238h-0.24l-0.24,0.24l-0.479,0.72l-0.48,0.24l-0.479,0.24l-0.48,0.479l-0.479,0.96l-0.48,1.44v0.24l0.48,0.479v0.24h0.72h0.239l0.479-0.24l-0.239,0.24v0.24v0.24l0.239-0.24v-0.48h0.24l0.239-0.239l0.479-0.24h0.24v-0.24v-0.24v-0.24h0.239l0.24-0.24l0.959,0.479v0.24l0.24,0.24v0.479h-0.24h-0.238h-0.24v0.24l-0.24,0.24l-0.24,0.24h-0.238l-0.24-0.24h-0.24l-0.24-0.24l-0.238-0.24v0.24l0.238,0.24l0.24,0.72h-0.24l-0.238-0.239l-0.24,0.239v-0.239h-0.24l0.721,0.239l0.239,0.24l-0.479,0.48l-0.239,0.239l0.239,0.24l0.24-0.24l0.239,0.24h0.24l0.239,0.24l0.24-0.24l-0.24-0.24v-0.239l0.24-0.24h-0.24l0.24-0.48l0.239-0.239l0.24,0.479h0.479l0.239,0.48l-0.239,0.479v0.24l0.479,0.72v0.24v0.24v0.479v0.24v0.24h-0.24l-0.72,0.481h-0.24l-0.72-0.481l-0.24-0.24l-0.239,0.48l-0.24,0.24v0.239v0.48h-0.479l-0.239-0.24l-0.479,0.24v0.241h-0.24h-0.239h-0.48v-0.241l-0.239-0.24l-0.239,0.24v-0.719v-0.24v-0.241v-0.48v-0.72l-0.24-0.24h-0.24l-0.239,0.48l0.239,0.479h-0.239l-0.24,0.24v0.24v0.241l-0.239,0.24v-0.24h-0.24l-0.239,0.479v0.24l0.239,0.24l-0.239,0.241h-0.479h-0.24l-0.239-0.48h-0.24v-0.24l-0.239-0.239v-0.24l-0.24-0.241h-0.479l-0.239,0.241h-0.24h-0.239l-0.72-0.721v-0.239h-0.24v-0.24l0.24-0.24l0.238-0.24h0.24v-0.239h0.24v0.239h0.24h0.24v-0.239l0.238-0.48v-0.24l-0.238-0.24h-0.24l-0.24-0.239h0.24l-0.24-0.24l-0.48,0.479h-0.479v0.24l-0.24,0.24l-0.238,0.24h-0.24l-0.24-0.24l-0.24-0.48v-0.239v-0.48l-0.24-0.72v-0.24l0.24-0.24v-0.24l-0.24-0.239l-0.238-0.48v-0.96v-0.241l-0.48-0.24h-0.479l-0.48-0.239l-0.24,0.239h-0.238l-0.24-0.239h-0.96l-0.479-0.48v-0.241l-0.24-0.239v-0.24v-0.24l-0.479-0.48v-0.239v-0.24l-0.239-0.24h-0.24l-0.24-0.24h-0.239l-0.24-0.239l-0.239-0.24l-0.24-0.24h-0.239h-0.24l-0.239,0.24l-0.24,0.479h-0.479l-0.72-0.239l-1.2,0.96l-0.479-0.24h-0.479l-0.479-0.24l-0.239,0.24h-0.48l-0.239,0.479l-0.24-0.239h-0.72l-0.24-0.24h-0.24h-0.24h-0.239l-0.24,0.24h-0.24h-0.24h-0.239l-0.24-0.24l0.24-0.72l0.239-0.24l-0.479-0.24h-0.24h-0.24V43.7l-0.239-0.24l-0.48-0.24l-0.24-0.24h-0.239l-0.48-0.239V42.5h-0.24l-0.239-0.24v-0.48h-0.24v-0.239h-0.24l0.24-0.241v-0.719h0.24v-0.24l0.239-0.24h-0.239v-0.24l-0.48-0.24l0.24-0.239h0.24h0.239h0.48v-0.24l0.24,0.24v-0.24h0.479l0.48-0.24l0.72,0.24h0.24l0.239-0.24v-0.24v-0.479l0.24-0.24l-0.24-0.24h0.24l0.24-0.24v-0.479l-0.24-0.24v-0.479h0.24l0.24-0.24l0.239-0.24v0.24h0.24h0.24l0.24-0.24l0.24,0.24h0.479l0.24-0.24h0.479h-0.24v-0.24h0.24l0.24-0.24v-0.239h0.239l0.24-0.24v-0.241h0.239l0.24,0.241l0.239,0.24h0.24h0.239h0.24l0.239,0.239v0.48h0.479v-0.24h0.24l0.239-0.72v-0.48l-0.239-0.72l0.239-0.479h-0.239l-0.479-0.24h0.239v-0.24v-0.24v-0.24h0.24l-0.24-0.239h0.479v-0.24l0.24-0.24v-0.48H293.079zM303.159,54.268l-0.479-0.24l-0.24,0.24l0.24,0.24h0.479V54.268L303.159,54.268zM304.838,55.228l0.479-0.24v-0.72l-0.239-0.24h-0.24h-0.239v0.24l0.239,0.479l-0.239,0.24L304.838,55.228L304.838,55.228z").attr(attr);
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/svg/spain.svg");
-	xhr.addEventListener("load",function(){
-		var root = xhr.responseXML.getElementsByTagName('svg')[0].getAttribute('viewBox').split(' ');
-		var width = root[2], height = root[3];
-		var R = Raphael("map");
-		R.setSize(window.innerWidth, window.innerHeight);
-		R.setViewBox(0, 0, window.innerWidth, window.innerHeight);
-		window.addEventListener("resize",function(){
-			R.setSize(window.innerWidth, window.innerHeight);
-			//R.setViewBox(0, 0, window.innerWidth, window.innerHeight);
-			//alert("Resize");
-		});
-		//R.canvas.setAttribute('preserveAspectRatio', 'none');
-		var attr = {
-			fill: "#333",
-			stroke: "#666",
-			"stroke-width": 1,
-			"stroke-linejoin": "round"
-		};
-		var map = R.importSVG(xhr.responseXML);
-		map.attr(attr);
-		var coruna = R.getById("pr_zaragoza");
-		coruna.click(function(){
-			coruna.attr({
-				fill: "#FF0000"
-			});
-		});
-		var zaragoza = document.getElementById("pr_zaragoza");
-		console.dir(zaragoza);
+/* AdMob */
+/* Iconos */
+
+var s = Snap("#map");
+var list = [];
+var progress = 0;
+var areas, selector;
+var searchfor = -1;
+var errors = 0;
+var attr = {
+	fill: "#333",
+	stroke: "#666",
+	"stroke-width": 1,
+	"stroke-linejoin": "round"
+};
+var lock = false;
+var text;
+var rect;
+var hud;
+
+function shuffle(array){
+	var m = array.length, t, i;
+	while(m){
+		i = Math.floor(Math.random() * m--);
+		t = array[m];
+		array[m] = array[i];
+		array[i] = t;
+	}
+	return array;
+}
+
+function parseGET(val){
+	var result = "Not found", tmp = [];
+	var items = location.search.substr(1).split("&");
+	for(var index = 0; index < items.length; index++){
+		tmp = items[index].split("=");
+		if(tmp[0] === val ) result = decodeURIComponent(tmp[1]);
+	}
+	return result;
+}
+
+function correct(sel){
+	var el = s.select(sel);
+	el.animate({
+		fill: "green"
+	},450);
+}
+
+function wrong(sel){
+	var el = s.select(sel);
+	el.attr({
+		fill: "red"
 	});
-	xhr.send();
+}
+
+function endGame(){
+	
+}
+
+
+function processClick(index){
+	if(lock) return;
+	var selected = selector[index];
+	if(typeof selected != "string"){
+		selected.forEach(function(sel){
+			if(index === searchfor)
+				correct(sel);
+			else
+				wrong(sel);
+		});
+	}else{
+		if(index === searchfor)
+			correct(selected);
+		else
+			wrong(selected);
+	}
+	/* Sound */
+	if(index === searchfor){
+		lock = true;
+		setTimeout(function(){
+			selector.forEach(function(selected,index){
+				if(typeof selected != "string"){
+					selected.forEach(function(sel){
+						s.select(sel).attr(attr);
+					});
+				}else{
+					s.select(selected).attr(attr);
+				}
+			});
+			progress++;
+			if(progress == list.length){
+				endGame();
+			}
+			nextArea();
+			lock = false;
+		},1000);
+	}else{
+		errors++;
+	}
+}
+
+function nextArea(){
+	if(text != undefined){
+		text.remove();
+		rect.remove();
+	}
+	var index = list[progress];
+	console.log("Search for "+index+" which is "+areas[index]);
+	searchfor = index;
+	var vb = s.attr("viewBox");
+	text = s.text(vb.x+10,vb.y+20,areas[index]);
+	rect = s.rect(vb.x+5,vb.y,text.getBBox().width+10,text.getBBox().height+5,10);
+	rect.attr({fill: "#59EEA8"});
+	text.remove();
+	text = s.text(vb.x+10,vb.y+20,areas[index]);
+}
+
+function drawMap(f,viewBox) {
+	var g = f.selectAll("*");
+	console.dir(g);
+	g.attr(attr);
+	s.append(g);
+	s.attr({ viewBox: viewBox,width: window.innerWidth, height: window.innerHeight});
+	window.addEventListener("resize",function(){
+		s.attr({ viewBox: viewBox,width: window.innerWidth, height: window.innerHeight});
+	});
+	setInterval(function(){
+		if(hud != undefined) hud.remove();
+		// Draw score and time
+		var vb = s.attr("viewBox");
+		hud = s.text(0,0,"Errores: "+errors);
+		s.rect(vb.x + vb.width - hud.getBBox().width -15,vb.y,hud.getBBox().width + 5 ,hud.getBBox().height+10,10).attr({
+			fill: "#59AAEE"
+		});
+		hud = s.text(vb.x + vb.width - hud.getBBox().width -15,vb.y+20,"Errores: "+errors);
+	},1000);
+	
+	for(var i=0;i<areas.length;i++){
+		list.push(i);
+	}
+	list = shuffle(list);
+	selector.forEach(function(selected,index){
+		console.log("Selected: "+selected);
+		if(typeof selected != "string"){
+			selected.forEach(function(sel){
+				s.select(sel).click(function(){
+					processClick(index);
+				});
+			});
+		}else{
+			s.select(selected).click(function(){
+				processClick(index);
+			});
+		}
+	});
+	nextArea();
+	
 }
 
 function load(){
-	var s = Snap("#map");
-	var attr = {
-		fill: "#333",
-		stroke: "#666",
-		"stroke-width": 1,
-		"stroke-linejoin": "round"
-	};
-	Snap.load("/svg/spain.svg",function(f){
-		var g = f.selectAll("*");
-		console.dir(g);
-		g.attr(attr);
-		s.append(g);
-		s.attr({ viewBox: "133.965 0 443.965 374",width: window.innerWidth, height: window.innerHeight});
-		var madrid = s.select("#pr_madrid");
-		madrid.click(function(){
-			var selected = madrid.data("selected") | false;
-			madrid.attr({
-				fill: (selected) ? "#333" : "#FF0000"
-			});
-			madrid.data("selected",!selected);
+	var map = parseGET("map");
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET","/quiz/"+map);
+	xhr.addEventListener("load",function(){
+		var quizInfo = JSON.parse(xhr.responseText);
+		Snap.load(quizInfo.svg,function(f){
+			areas = quizInfo.areas;
+			selector = quizInfo.selector;
+			drawMap(f,quizInfo.viewBox);
 		});
 	});
-	window.addEventListener("resize",function(){
-		s.attr({ viewBox: "133.965 0 443.965 374",width: window.innerWidth, height: window.innerHeight});
-	});
+	xhr.send();
 }
 
 document.addEventListener("deviceready",load);
